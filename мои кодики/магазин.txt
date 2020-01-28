@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия «Nёrds»</title>
+  </head>
+  <body>
+<header>
+<img src="logo/nerds.png" width+"#" height="#" alt="Логотип дизайн-студии «Nёrds»">
+<nav>
+<ul>
+<li> <a href="studio.html">Студия</a> </li>
+<li> <a href="customers.html">Клиенты</a> </li>
+<li> <a href="shop.html">Магазин</a> </li>
+<li> <a href="contacts.html">Контакты</a></li>
+</ul>
+<ul>
+<li> <a href="basket.html">Корзина</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<h1>Магазин готовых шаблонов</h1>
+<section>
+<!--Здесь будет блок сортировки-->
+</section>
+
+<section>
+<h3>Сетка:</h3>
+<ul>
+<li><span style=""></span> Адаптивная </li>
+<li><span style=""></span> Фиксированная </li>
+<li><span style=""></span> Резиновая </li>
+</ul>
+</section>
+
+<section>
+<h3>Особенности:</h3>
+<ul>
+<li><span style=""></span> Слайдер </li>
+<li><span style=""></span> Блок преимуществ </li>
+<li><span style=""></span> Новости </li>
+<li><span style=""></span> Галерея </li>
+<li><span style=""></span> Корзина </li>
+</ul>
+<button type="button"> Показать </button>
+</section>
+
+<section>
+<a href=""><img src="sedona.jpg" width+"#" height="#" alt="Пример для лендинга Sedona"></a>
+<a href=""><img src="sedona.jpg" width+"#" height="#" alt="Пример для лендинга OOpink"></a>
+<a href=""><img src="sedona.jpg" width+"#" height="#" alt="Пример для лендинга барбершопа «Бородинский»"></a>
+<a href=""><img src="sedona.jpg" width+"#" height="#" alt="Пример для лендинга сайта интерьерных товаров Mishka"></a>
+<a href=""><img src="sedona.jpg" width+"#" height="#" alt="Пример для лендинга сайта школы А"></a>
+<a href=""><img src="sedona.jpg" width+"#" height="#" alt="Пример для лендинга продуктового магазина"></a>
+</section>
+
+<!-- Секция с переходами на следующие страницы и картой -->
+
+</main>
+
+<footer>
+<ul>
+<li> <a href="">Вконтакте</a> </li>
+<li> <a href="">Facebook</a> </li>
+<li> <a href="">Instagram</a> </li>
+</ul>
+<div>
+<h2>Давайте дружить, это выгодно!</h2>
+<p> Скидка 10% для друзей из социальных сетей.</p>
+</footer>
+
+  </body>
+  </html>

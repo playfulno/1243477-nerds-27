@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Дизайн-студия «Nёrds»</title>
+  </head>
+  <body>
+<header class="main-header">
+<nav>
+<img src="logo/nerds.png" width="#" height="#" alt="Логотип дизайн-студии «Nёrds»">
+<ul>
+<li> <a href="studio.html">Студия</a> </li>
+<li> <a href="customers.html">Клиенты</a> </li>
+<li> <a href="catalog.html">Магазин</a> </li>
+<li> <a href="contacts.html">Контакты</a></li>
+</ul>
+<ul>
+<li> <a href="basket.html">Корзина</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section>
+<!-- Секция долго, дорого, скурпулезно -->
+</section>
+<section>
+<img src="web-sites.png" alt="графика веб-сайтов">
+<h3>Веб-сайты</h3>
+<p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+<a href="#">Заказать</a>
+</section>
+
+<section>
+<img src="app.png" alt="графика для приложений">
+<h3>Приложения</h3>
+<p>Покорите топ-10 приложений в AppStore и Google Play</p>
+<a href="#">Заказать</a>
+</section>
+
+<section>
+<img src="pres.png" alt="графика для презентаций">
+<h3>Презентации</h3>
+<p>Вы даже не подозреваете, насколько вы изумительны!</p>
+<a href="#">Заказать</a>
+</section>
+
+<section>
+<!-- Форма для основной секции и карты -->
+</section>
+</main>
+
+<footer>
+<ul>
+<li> <a href="">Вконтакте</a> </li>
+<li> <a href="">Facebook</a> </li>
+<li> <a href="">Instagram</a> </li>
+</ul>
+<div>
+<h2>Давайте дружить, это выгодно!</h2>
+<p> Скидка 10% для друзей из социальных сетей.</p>
+</footer>
+
+
+
+
+
+
+
+
+</body>
+</html>
