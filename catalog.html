@@ -26,19 +26,46 @@
 <!--Здесь будет блок сортировки-->
 </section>
 
-<section>
-<section>
-<h3>Сетка:</h3>
-<!-- ФОРМА
-<ul>
-<li><img src="img/svg/radio-on.svg">Адаптивная </li>
-<li><img src="img/svg/radio-off.svg">Фиксированная </li>
-<li><img src="img/svg/radio-off.svg">Резиновая </li> -->
-</ul>
-</section>
 
 <section>
+<fieldset>
+  <h3>Сетка:</h3>
+<ul>
+<li> <input type="radio" name="grid" value="adaptive-grid"> Адаптивная </li>
+<li> <input type="radio" name="grid" value="fixed-grid"> Фиксированная </li>
+<li> <input type="radio" name="grid" value="rubber-grid"> Резиновая </li> 
+</ul>
+</fieldset>
+
+<fieldset>
 <h3>Особенности:</h3>
+<ul>
+  <li>
+  <input type="checkbox" name="slider" id="filter-slider">
+    <label for="filter-slider">Слайдер</label>
+    </li>
+    <li>
+      <input type="checkbox" name="advantages" id="filter-advantages">
+        <label for="filter-advantages">Блок преимуществ</label>
+        </li>
+        <li>
+          <input type="checkbox" name="news" id="filter-news">
+            <label for="filter-news">Новости</label>
+            </li>
+            <li>
+              <input type="checkbox" name="gallery" id="filter-gallery">
+                <label for="filter-gallery">Галерея</label>
+                </li>
+                <li>
+                  <input type="checkbox" name="basket" id="filter-basket">
+                    <label for="filter-basket">Корзина</label>
+                    </li>
+  </ul>
+  <button type="button"> Показать </button>
+  </fieldset>
+</form>
+</section>
+
 <!-- ФОРМА 
 <ul>
 <li><span><img src="img/svg/checkbox-on.svg"></span> Слайдер </li>
@@ -47,9 +74,9 @@
 <li><span><img src="img/svg/checkbox-off.svg"></span> Галерея </li>
 <li><span><img src="img/svg/checkbox-off.svg"></span> Корзина </li>
 </ul>
-<button type="button"> Показать </button> -->
-</section>
-</section>
+ -->
+
+
 
 <section>
 <ul>
@@ -108,7 +135,25 @@
 </main>
 
 <footer>
-  <a href="#"> <img src="img/map.jpg"> </a>
+  <!-- <a href="#"> <img src="img/map.jpg"> </a> -->
+  <section>
+    <h1>Напишите нам</h1>
+    <form action="index.html" method="post">
+    <p>
+           <label for="appointment-name">Ваше имя</label>
+                <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+          </p>
+          <p>
+          <label for="appointment-email">Ваш e-mail</label>
+                <input id="appointment-email" value="" placeholder="email@example.com">
+          </p>
+          <p>
+               <label for="appointment-text">Текст письма</label>
+                <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+          </p>
+          <button type="submit">Отправить</button>
+          </form>
+          </section>
 <ul>
   <li> <a href="#"> <img class="grey-round" src="img/svg/vk-icon.svg" alt="Вконтакте"> </a> </li>
   <li> <a href="#"> <img class="grey-round" src="img/svg/fb-icon.svg" alt="Facebook"></a> </li>
