@@ -3,10 +3,83 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
-
+    <header>
+        <nav>
+        <a>
+          <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»">
+        </a>
+        <ul class="ul-list">
+        <li class="site-navigation"> <a href="#">Студия</a> </li>
+        <li class="site-navigation"> <a href="#">Клиенты</a> </li>
+        <li class="site-navigation"> <a href="catalog.html">Магазин</a> </li>
+        <li class="site-navigation"> <a href="#">Контакты</a></li>
+        </ul>
+        <div> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div>
+        </nav>
+        </header>
+        
+        <section>
+          <ul class="advantage-picture-list">
+          <li>
+        <img src="img/advantage-picture-red.png" alt="графика веб-сайтов">
+        <h3 class="advantage-title">Веб-сайты</h3>
+        <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+        <a class="advantage-button advantage-button-red" href="#">Заказать</a>
+          </li>
+          <li>
+        <img src="img/advantage-picture-green.png" alt="графика для приложений">
+        <h3 class="advantage-title">Приложения</h3>
+        <p class="advantage-text">Покорите топ-10 приложений в AppStore и Google Play</p>
+        <a class="advantage-button advantage-button-green" href="#">Заказать</a>
+          </li>
+          <li>
+        <img src="img/advantage-picture-yellow.png" alt="графика для презентаций">
+        <h3 class="advantage-title">Презентации</h3>
+        <p class="advantage-text">Вы даже не подозреваете, насколько вы изумительны!</p>
+        <a class="advantage-button advantage-button-yellow" href="#">Заказать</a>
+        </li>
+          </ul>
+        </section>
+      
+      <section>
+      <!-- Форма для основной секции и карты -->
+      </section>
+      </main>
+      
+      <footer class="main-footer"> 
+        <!-- <a href="#"> <img src="img/map.jpg"> </a> -->
+      <ul class="social-buttom-list">
+      <li> <a class="social-button" "social-img-style" href="#"> <img src="img/svg/vk-icon.svg" alt="Вконтакте"> </a> </li>
+      <li> <a class="social-button" "social-img-style" href="#"> <img src="img/svg/fb-icon.svg" alt="Facebook"></a> </li>
+      <li> <a class="social-button" "social-img-style" href="#"><img src="img/svg/insta-icon.svg" alt="Instagram"></a> </li>
+      </ul>
+      <div>
+      <h3>Давайте дружить, это выгодно!</h3>
+      <p> Скидка 10% для друзей из социальных сетей.</p>
+      </div>
+      </footer>
+      <section>
+        <h1>Напишите нам</h1>
+        <form action="index.html" method="post">
+        <p>
+               <label for="appointment-name">Ваше имя</label>
+                    <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+              </p>
+              <p>
+              <label for="appointment-email">Ваш e-mail</label>
+                    <input id="appointment-email" value="" placeholder="email@example.com">
+              </p>
+              <p>
+                   <label for="appointment-text">Текст письма</label>
+                    <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+              </p>
+              <button type="submit">Отправить</button>
+              </form>
+              </section>
   </body>
 </html>
