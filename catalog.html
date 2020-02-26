@@ -8,18 +8,19 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-<header class="main-header">
-<nav class="main-navigation">
-<a class="main-header-logo" href="index.html">
-<img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»">
+<header>
+<nav class="site-navigation">
+<a href="index.html">
+<img class="logo-button" src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»">
 </a>
-<ul class="site-navigation">
-        <li> <a href="#">Студия</a> </li>
-        <li> <a href="#">Клиенты</a> </li>
-        <li> <a href="#">Магазин</a> </li>
-        <li> <a href="#">Контакты</a></li>
-        </ul>
-        <div> <a href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div>
+<ul class="ul-list">
+  <li class="site-navigation"> <a class="site-navigation-link" href="#">Студия</a> 
+  </li>
+  <li class="site-navigation"> <a class="site-navigation-link" href="#">Клиенты</a> </li>
+  <li class="site-navigation"> <a class="site-navigation-link" href="catalog.html">Магазин</a> </li>
+  <li class="site-navigation"> <a class="site-navigation-link" ref="#">Контакты</a></li>
+  </ul>
+  <div> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div>
 </nav>
 </header>
 <main>
@@ -30,43 +31,46 @@
 
 
 <section>
-<fieldset>
-  <h3>Сетка:</h3>
-<ul>
-<li> <input type="radio" name="grid" value="adaptive-grid"> Адаптивная </li>
-<li> <input type="radio" name="grid" value="fixed-grid"> Фиксированная </li>
-<li> <input type="radio" name="grid" value="rubber-grid"> Резиновая </li> 
-</ul>
-</fieldset>
 
-<fieldset>
-<h3>Особенности:</h3>
-<ul>
-  <li>
-  <input type="checkbox" name="slider" id="filter-slider">
-    <label for="filter-slider">Слайдер</label>
-    </li>
-    <li>
-      <input type="checkbox" name="advantages" id="filter-advantages">
-        <label for="filter-advantages">Блок преимуществ</label>
-        </li>
-        <li>
-          <input type="checkbox" name="news" id="filter-news">
-            <label for="filter-news">Новости</label>
-            </li>
-            <li>
-              <input type="checkbox" name="gallery" id="filter-gallery">
-                <label for="filter-gallery">Галерея</label>
-                </li>
-                <li>
-                  <input type="checkbox" name="basket" id="filter-basket">
-                    <label for="filter-basket">Корзина</label>
-                    </li>
+  <fieldset>
+    <h3 class="sort-title">Сетка:</h3>
+  <ul class="input-list">
+  <li> <input class="input-text" type="radio" name="grid" value="adaptive-grid"> Адаптивная </li>
+  <li> <input type="radio" name="grid" value="fixed-grid"> Фиксированная </li>
+  <li> <input type="radio" name="grid" value="rubber-grid"> Резиновая </li> 
   </ul>
-  <button type="button"> Показать </button>
   </fieldset>
-</form>
-</section>
+  
+  <fieldset>
+  <h3 class="sort-title">Особенности:</h3>
+  <ul class="input-list">
+    <li>
+    <input type="checkbox" name="slider" id="filter-slider">
+      <label for="filter-slider">Слайдер</label>
+      </li>
+      <li>
+        <input type="checkbox" name="advantages" id="filter-advantages">
+          <label for="filter-advantages">Блок преимуществ</label>
+          </li>
+          <li>
+            <input type="checkbox" name="news" id="filter-news">
+              <label for="filter-news">Новости</label>
+              </li>
+              <li>
+                <input type="checkbox" name="gallery" id="filter-gallery">
+                  <label for="filter-gallery">Галерея</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" name="basket" id="filter-basket">
+                      <label for="filter-basket">Корзина</label>
+                      </li>
+    </ul>
+    <button class="show-filter-button" type="button"> Показать </button>
+    </fieldset>
+  </section>
+
+
+<section>
 
 <!-- ФОРМА 
 <ul>
@@ -77,76 +81,81 @@
 <li><span><img src="img/svg/checkbox-off.svg"></span> Корзина </li>
 </ul>
  -->
+ </section>
 
 
+ <section>
+  <ul class="catalog-list">
+      <li>
+          <img src="img/catalog/sedona.jpg" width="360" height="576" alt="Пример для лендинга Sedona">
+          <a class="site-title" href="#"><h3>Sedona</h3></a>
+          <p class="site-description">Информационный сайт для туристов</p>
+          <button class="price-button" type="button">9 900 руб.</button>
+          </li>
+  
+          <li>
+          <img src="img/catalog/pink.jpg" width="360" height="576" alt="Пример для лендинга OOpink">
+          <a class="site-title" href="#"><h3>Pink App</h3></a>
+          <p class="site-description">Продуктовый лендинг приложения для iOS и Android</p>
+          <button class="price-button" type="button">9 900 руб.</button>
+          </li>
+  
+          <li>
+              <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="Пример для лендинга барбершопа «Бородинский»">
+              <a class="site-title" href="#"><h3>Barbershop</h3></a>
+              <p class="site-description">Сайт салона красоты. Для мужчин, да.</p>
+              <button class="price-button" type="button">9 900 руб.</button>
+              </li>
+  
+              <li>
+                  <img src="img/catalog/mishka.jpg" width="360" height="576" alt="Пример для лендинга сайта вязаных игрушек Mishka">
+                  <a class="site-title" href="#"><h3>MISHKA</h3></a>
+                  <p class="site-description">Интернет-магазин вязаных игрушек</p>
+                  <button class="price-button" type="button">9 900 руб.</button>
+                  </li>
+  
+                  <li>
+                      <img src="img/catalog/aplus.jpg" width="360" height="576" alt="Пример для лендинга сайта A Plus">
+                      <a class="site-title" href="#"><h3>A Plus</h3></a>
+                      <p class="site-description">Лендинг курсов повышения квалификации</p>
+                      <button class="price-button" type="button">9 900 руб.</button>
+                      </li>
+  
+                      <li>
+                          <img src="img/catalog/kvast.jpg" width="360" height="576" alt="Пример промо-сайт производителя крафтового кваса">
+                        <a class="site-title" href="#"><h3>КВАСТ</h3></a>
+                          <p class="site-description">Промо-сайт производителя крафтового кваса</p>
+                          <button class="price-button" type="button">9 900 руб.</button>
+                          </li>
+                          </ul>
+  </section>
 
-<section>
-<ul>
-    <li>
-        <img src="img/catalog/sedona.jpg" width="360" height="576" alt="Пример для лендинга Sedona">
-        <a href="#"><h3>Sedona</h3></a>
-        <p>Информационный сайт для туристов</p>
-        <button type="button">9 900 руб.</button>
-        </li>
 
-        <li>
-        <img src="img/catalog/pink.jpg" width="360" height="576" alt="Пример для лендинга OOpink">
-        <a href="#"><h3>Pink App</h3></a>
-        <p>Продуктовый лендинг приложения для iOS и Android</p>
-        <button type="button">9 900 руб.</button>
-        </li>
-
-        <li>
-            <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="Пример для лендинга барбершопа «Бородинский»">
-            <a href="#"><h3>Barbershop</h3></a>
-            <p>Сайт салона красоты.Для мужчин, да.</p>
-            <button type="button">9 900 руб.</button>
-            </li>
-
-            <li>
-                <img src="img/catalog/mishka.jpg" width="360" height="576" alt="Пример для лендинга сайта вязаных игрушек Mishka">
-                <a href="#"><h3>MISHKA</h3></a>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <button type="button">9 900 руб.</button>
-                </li>
-
-                <li>
-                    <img src="img/catalog/aplus.jpg" width="360" height="576" alt="Пример для лендинга сайта A Plus">
-                    <a href="#"><h3>A Plus</h3></a>
-                    <p>Лендинг курсов повышения квалификации</p>
-                    <button type="button">9 900 руб.</button>
-                    </li>
-
-                    <li>
-                        <img src="img/catalog/kvast.jpg" width="360" height="576" alt="Пример промо-сайт производителя крафтового кваса">
-                      <a href="#"><h3>КВАСТ</h3></a>
-                        <p>Промо-сайт производителя крафтового кваса</p>
-                        <button type="button">9 900 руб.</button>
-                        </li>
-                        </ul>
-</section>
 <section>
 <ul class="pagination-list">
-<li class="pagination-item pagination-item-current"><a>1</a></li>
-<li class="pagination-item> <a href="#">2</a></li>
-<li class="pagination-item> <a href="#">3</a></li>
-<li class="pagination-item> <a href="#">Следующая</a></li>
+<li class="pagination-item" "pagination-item-current"><a>1</a></li>
+<li class="pagination-item"> <a href="#">2</a></li>
+<li class="pagination-item"> <a href="#">3</a></li>
+<li class="pagination-item"> <a href="#">Следующая</a></li>
 </ul>
 <!-- Тут будет карта! -->
 </section>
 </main>
 
-<footer class="main-footer">
+
+<footer class="main-footer"> 
   <!-- <a href="#"> <img src="img/map.jpg"> </a> -->
-<ul>
-  <li> <a href="#"> <img class="grey-round" src="img/svg/vk-icon.svg" alt="Вконтакте"> </a> </li>
-  <li> <a href="#"> <img class="grey-round" src="img/svg/fb-icon.svg" alt="Facebook"></a> </li>
-  <li> <a href="#"><img class="grey-round" src="img/svg/insta-icon.svg" alt="Instagram"></a> </li>
+<ul class="social-button-list">
+<li> <a class="social-button" "social-img-style" href="#"> <img src="img/svg/vk-icon.svg" alt="Вконтакте"> </a> </li>
+<li> <a class="social-button" "social-img-style" href="#"> <img src="img/svg/fb-icon.svg" alt="Facebook"></a> </li>
+<li> <a class="social-button" "social-img-style" href="#"><img src="img/svg/insta-icon.svg" alt="Instagram"></a> </li>
 </ul>
 <div>
 <h3>Давайте дружить, это выгодно!</h3>
 <p> Скидка 10% для друзей из социальных сетей.</p>
+</div>
 </footer>
+
 <section>
   <h1>Напишите нам</h1>
   <form action="index.html" method="post">
