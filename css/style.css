@@ -1,7 +1,6 @@
 body {
   margin: 0;
   padding: 0;
-
   font-family: "Roboto", Arial, regular;
   font-size: 16px;
   line-height: 1.5;
@@ -11,6 +10,12 @@ body {
 
 .ul-list{
   list-style: none;
+}
+
+.main-navigation-wrapper {
+  display: inline-block;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .site-navigation a{
@@ -33,19 +38,22 @@ body {
   text-align: left;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000000
+  color: #000000;
+  display: inline-block;
 }
 
-.site-navigation-link: hover{
+.site-navigation-link:hover{
  color: #fb565a;
 }
 
-.site-navigation-link: active{
+.site-navigation-link:active{
  color: rgba(0, 0, 0, 0.3);
- text-decoration: underline;
- under-color: #fb565a;
  }
- 
+ .site-navigation-link:focus{
+ color: #000000;
+ text-decoration: underline;
+ underline-color: #fb565a;
+}
 
 .advantage-title {
   font-family: "Roboto", sans-serif;
@@ -53,6 +61,8 @@ body {
   font-weight: bold;
   text-align: left;
   text-transform: uppercase;
+  padding-top: 26px;
+  padding-bottom: 26px;
 }
 .advantage-text{
   font-family: "Roboto", sans-serif;
@@ -62,7 +72,15 @@ body {
   color: #283136;
 }
 .advantage-picture-list{
-    list-style:none;
+  width: 1100px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 140px;
+  margin-left: 80px;
+  margin-right: 200px;
+    
   }
 .advantage-button {
   font-family: "Roboto", sans-serif;
@@ -82,6 +100,8 @@ body {
 
 .advantage-button-red {
   background-color: #fb565a;
+   margin-top: 35px;
+  margin-right: 240px;
 }
 .advantage-button-red:hover{
   background-color: #e74246;
@@ -91,6 +111,8 @@ body {
 }
 .advantage-button-green {
   background-color: #00ca74;
+   margin-top: 35px;
+  margin-right: 240px;
 }
 .advantage-button-green:hover{
   background-color: #00bc6c;
@@ -100,13 +122,15 @@ body {
   }
 .advantage-button-yellow{
   background-color: #efc84a;
+   margin-top: 35px;
+  margin-right: 240px;
 }
 .advantage-button-yellow:hover{
   background-color: #eab534;
 }
 .advantage-button-yellow:active{
   background-color: #e5a722;
-
+}
 a {
   text-decoration: none;
 }
@@ -125,10 +149,10 @@ fieldset ul {
   list-style: none;
 }
 
-.logo-button: hover{
+.logo-button:hover{
     opacity: 0.8;
 }
-.logo-button: active{
+.logo-button:active{
     opacity: 0.3;
 }
 
@@ -163,10 +187,10 @@ fieldset ul {
   height: 50px;
   background-color: #eeeeee;
 }
-.show-filter-button: hover{
+.show-filter-button:hover{
   background-color: #dfdfdf;
 }
-.show-filter-button: active{
+.show-filter-button:active{
   color: rgba(0, 0, 0, 0.3);
   background-color: rgba(0, 1, 1, 0.1);
 }
@@ -183,10 +207,10 @@ fieldset ul {
     text-transform: uppercase; 
     text-decoration: none;
   }
-  .site-title: hover{
+  .site-title:hover{
     color: #fb565a;
   }
-  .site-title: active{
+  .site-title:active{
     color: rgba(0, 0, 0, 0.3);
   }
   .site-description{
@@ -206,10 +230,10 @@ fieldset ul {
     text-decoration: none;
     text-align: center;
   }
-  .price-button: hover{
+  .price-button:hover{
     background-color: #e74246;
   }
-  .price-button: active{
+  .price-button:active{
     background-color: #d7373b;
   }
 
@@ -221,11 +245,11 @@ fieldset ul {
     width: 79px;
    height: 79px;
  }
-.social-button: hover{
+.social-button:hover{
   background-color: #e74246;
 }
 
-.social-button: active{
+.social-button:active{
   box-shadow: inset 0px 3px 0 0 rgba(0, 1, 1, 0.1);
   background-color: #d7373b;
 }
@@ -234,11 +258,11 @@ fieldset ul {
  background-color: #e1e1e1; 
    width: 79px;
   height: 79px;
-
-.main-footer {
-  color: #000000;
-  width: 1440px;
-  height: 217px;
-  background-color: #b1a8a8;
 }
+.main-footer {
+    color: #000000;
+    width: 1440px;
+    height: 217px;
+    background-color: #ffffff;
+  }
 
