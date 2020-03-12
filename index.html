@@ -9,21 +9,29 @@
   </head>
   <body>
 
-    <header>
-        <nav>
+    <header class="nav-header">
+        <nav class="main-navigation">
         <a>
           <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»">
         </a>
-        <ul class="ul-list">
+        <div class="main-navigation-wrapper">
+       <ul class="ul-list">
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Студия</a> </li>
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Клиенты</a> </li>
         <li class="site-navigation"> <a class="site-navigation-link" href="catalog.html">Магазин</a> </li>
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Контакты</a></li>
+        <li class="site-navigation"> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </li>
         </ul>
-        <div> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div>
+      </div>
+        <!--<div> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div> -->
         </nav>
+        <!-- <section>
+          <b>Долго, дорого, скрупулезно.</b>
+          <div>Математически выверенный дизайн для вашего сайта или мобильного приложения.</div>
+          <a class="slide-text" href="#">Узнать больше</a>
+        </section> -->
         </header>
-        <!-- <h1>Секция долго, дорого, скурпулезно</h1> -->
+      
         <section>
           <ul class="advantage-picture-list">
           <li>
@@ -47,10 +55,40 @@
           </ul>
         </section>
 
-      <section>
+      <section class="info-section"> <!--info-section-->
+        <div>
+        <h2 class="info-section-title"> Мы — маленькая, но гордая <br> дизайн-студия из Краснодара. </h2>
+        <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
+          превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <p class="info-section-subtitle">Выполняем заказы на разработку:</p>
+          <ul class="first-info-list"> 
+            <li class="info-list">Веб-сайтов любой сложности</li>
+            <li class="info-list">Мобильных приложений для iOS и Android</li>
+            <li class="info-list">Слайдшоу и видео для корпоративных презентаций</li>
+          </ul>
+        </div>
+        <div>
+          <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип дизайн-студии «Nёrds»">
+          <p class="info-section-subtitle">с 2004 года Любим точность во всем:</p>
+          <ul class="ul-info-list">
+          <li> <h3 class="info-percent">146%</h3> <p class="text-percent">Уровень самоотдачи</p> </li>
+          <li> <h3 class="info-percent">100%</h3> <p class="text-percent">Соблюдение сроков</p> </li>
+          <li> <h3 class="info-percent">50%</h3> <p class="text-percent">Минимальная предоплата</p> </li>
+          </ul>
+        </div>
       <!-- Форма для основной секции и карты -->
       </section>
       
+      <section class="logo-list-section">
+        <ul class="logo-list">
+          <li> <a class="logo-list-button"> <img src="img/htmlacdemy-logo.png" width="199" height="68" alt="Логотип HTML-Academy"> </a> </li>
+          <li> <a class="logo-list-button"> <img src="img/borodinsli-logo.png" width="209" height="90" alt="Логотип барбершопа Borodinski"> </a> </li>
+          <li> <a class="logo-list-button"> <img src="img/pink-logo.png" width="185" height="52" alt="Логотип приложения для iOS и Android Pink"> </a> </li>
+          <li> <a class="logo-list-button"> <img src="img/mishka-logo.png" width="173" height="84" alt="Логотип интернет-магазина вязаных игрушек Mishka"> </a> </li>
+        </ul>
+      </section>
+
+
       <section>
 <!-- Тут будет карта! -->
 </section>
@@ -59,35 +97,37 @@
       
       <footer class="main-footer"> 
         <!-- <a href="#"> <img src="img/map.jpg"> </a> -->
-
+<div class="footer-social">
       <ul class="social-button-list">
-      <li> <a class="social-button" "social-img-style" href="#"> <img src="img/svg/vk-icon.svg" alt="Вконтакте"> </a> </li>
-      <li> <a class="social-button" "social-img-style" href="#"> <img src="img/svg/fb-icon.svg" alt="Facebook"></a> </li>
-      <li> <a class="social-button" "social-img-style" href="#"><img src="img/svg/insta-icon.svg" alt="Instagram"></a> </li>
+      <li class="social-icons"> <a class="social-button social-img-style" href="#"> <img src="img/svg/vk-icon.svg" alt="Вконтакте"> </a> </li>
+      <li class="social-icons"> <a class="social-button social-img-style" href="#"> <img src="img/svg/fb-icon.svg" alt="Facebook"></a> </li>
+      <li class="social-icons"> <a class="social-button social-img-style" href="#"><img src="img/svg/insta-icon.svg" alt="Instagram"></a> </li>
       </ul>
-      <div>
+    </div>
+      <div class="footer-text">
       <h3>Давайте дружить, это выгодно!</h3>
       <p> Скидка 10% для друзей из социальных сетей.</p>
       </div>
 
       </footer>
-      <section>
+      <section class="modal modal-post">
         <h1>Напишите нам</h1>
         <form action="index.html" method="post">
-        <p>
-               <label for="appointment-name">Ваше имя</label>
-                    <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
-              </p>
-              <p>
-              <label for="appointment-email">Ваш e-mail</label>
-                    <input id="appointment-email" value="" placeholder="email@example.com">
-              </p>
-              <p>
-                   <label for="appointment-text">Текст письма</label>
-                    <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
-              </p>
-              <button type="submit">Отправить</button>
-              </form>
-              </section>
+            <p> 
+              <label class="visually-hidden" for="appointment-name">Ваше имя</label>
+                        <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
+                  </p>
+                  <p>
+                  <label class="visually-hidden" for="appointment-email">Ваш e-mail</label>
+                        <input id="appointment-email" value="" placeholder="email@example.com">
+                  </p>
+                  <p>
+                       <label class="visually-hidden" for="appointment-text">Текст письма</label>
+                        <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+                  </p>
+                  <button type="submit">Отправить</button>
+                  </form>
+            <button class="modal-close" type="button"> <span class="visually-hidden">Закрыть</span> </button>
+          </section>
   </body>
 </html>
