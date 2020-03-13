@@ -20,24 +20,56 @@
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Клиенты</a> </li>
         <li class="site-navigation"> <a class="site-navigation-link" href="catalog.html">Магазин</a> </li>
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Контакты</a></li>
-        <li class="site-navigation"> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </li>
+        <li class="site-navigation"> <a class="site-navigation-link img-basket-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </li>
         </ul>
       </div>
         <!--<div> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div> -->
         </nav>
-        <!-- <section>
-          <b>Долго, дорого, скрупулезно.</b>
-          <div>Математически выверенный дизайн для вашего сайта или мобильного приложения.</div>
-          <a class="slide-text" href="#">Узнать больше</a>
-        </section> -->
+        <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+<input class="visually-hidden" type="radio" id="product-2" name="toggle">
+<input class="visually-hidden" type="radio" id="product-3" name="toggle">
+<div class="site-wrapper">
+    <div class="container">
+      <section class="slider">
+        <div class="slider-controls">
+            <label for="product-1">Первый</label>
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          
+        <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+                <h3 class="slide-title">Долго, дорого, скрупулезно</h3>
+                <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a class="button slide-button" href="#">Узнать больше</a>
+            </li>
+    
+            <li class="slider-item slide" id="slide1">
+                <h3 class="slide-title">Любим математику как никто другой</h3>
+                <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a class="button slide-button" href="#">Узнать больше</a>
+            </li>
+    
+            <li class="slider-item slide" id="slide1">
+                <h3 class="slide-title">Только ночь, только хардкор</h3>
+                <p class="slide-description">Работать днем, как все? Мы против этого.
+                    Ближе к полуночи работа только начинается.</p>
+                <a class="button slide-button" href="#">Узнать больше</a>
+            </li>
+        </ul>
+    </div>
+    </div>
+    </section>
         </header>
+
+ 
       
         <section>
           <ul class="advantage-picture-list">
           <li>
         <img src="img/advantage-picture-red.png" alt="графика веб-сайтов">
         <h3 class="advantage-title">Веб-сайты</h3>
-        <p>Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
+        <p class="advantage-text">Мир никогда не будет прежним после того, как увидит ваш сайт!</p>
         <a class="advantage-button advantage-button-red" href="#">Заказать</a>
           </li>
           <li>
@@ -114,15 +146,15 @@
         <h1>Напишите нам</h1>
         <form action="index.html" method="post">
             <p> 
-              <label class="visually-hidden" for="appointment-name">Ваше имя</label>
+              <label class="modal-label" for="appointment-name">Ваше имя</label>
                         <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
                   </p>
                   <p>
-                  <label class="visually-hidden" for="appointment-email">Ваш e-mail</label>
+                  <label class="modal-label" for="appointment-email">Ваш e-mail</label>
                         <input id="appointment-email" value="" placeholder="email@example.com">
                   </p>
                   <p>
-                       <label class="visually-hidden" for="appointment-text">Текст письма</label>
+                       <label class="modal-label" for="appointment-text">Текст письма</label>
                         <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
                   </p>
                   <button type="submit">Отправить</button>
