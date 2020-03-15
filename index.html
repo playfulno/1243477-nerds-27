@@ -20,10 +20,11 @@
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Клиенты</a> </li>
         <li class="site-navigation"> <a class="site-navigation-link" href="catalog.html">Магазин</a> </li>
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Контакты</a></li>
-        <li class="site-navigation"> <a class="site-navigation-link img-basket-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </li>
+        <!--<li class="site-navigation"> <a class="site-navigation-link img-basket-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </li> -->
         </ul>
+        <div> <a class="site-navigation-link img-basket-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div> 
       </div>
-        <!--<div> <a class="site-navigation-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </div> -->
+        
         </nav>
         <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
 <input class="visually-hidden" type="radio" id="product-2" name="toggle">
@@ -32,9 +33,9 @@
     <div class="container">
       <section class="slider">
         <div class="slider-controls">
-            <label for="product-1">Первый</label>
-            <label for="product-2">Второй</label>
-            <label for="product-3">Третий</label>
+            <label for="product-1"></label>
+            <label for="product-2"></label>
+            <label for="product-3"></label>
           </div>
           
         <ul class="slider-list">
@@ -44,13 +45,13 @@
                 <a class="button slide-button" href="#">Узнать больше</a>
             </li>
     
-            <li class="slider-item slide" id="slide1">
+            <li class="slider-item slide" id="slide2">
                 <h3 class="slide-title">Любим математику как никто другой</h3>
                 <p class="slide-description">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
                 <a class="button slide-button" href="#">Узнать больше</a>
             </li>
     
-            <li class="slider-item slide" id="slide1">
+            <li class="slider-item slide" id="slide3">
                 <h3 class="slide-title">Только ночь, только хардкор</h3>
                 <p class="slide-description">Работать днем, как все? Мы против этого.
                     Ближе к полуночи работа только начинается.</p>
@@ -143,23 +144,25 @@
 
       </footer>
       <section class="modal modal-post">
+        <button class="modal-close" type="button"> <span class="visually-hidden">Закрыть</span> </button>
         <h1>Напишите нам</h1>
-        <form action="index.html" method="post">
+        <form class="login-form" action="index.html" method="post">
             <p> 
-              <label class="modal-label" for="appointment-name">Ваше имя</label>
+              <label class="modal-label" for="appointment-name">Ваше имя:
+              </label>
                         <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
                   </p>
                   <p>
-                  <label class="modal-label" for="appointment-email">Ваш e-mail</label>
+                  <label class="modal-label" for="appointment-email">Ваш e-mail:</label>
                         <input id="appointment-email" value="" placeholder="email@example.com">
                   </p>
                   <p>
-                       <label class="modal-label" for="appointment-text">Текст письма</label>
+                       <label class="modal-label" for="appointment-text">Текст письма:</label>
                         <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
                   </p>
-                  <button type="submit">Отправить</button>
+                  <button class="send-button" type="submit">Отправить</button>
                   </form>
-            <button class="modal-close" type="button"> <span class="visually-hidden">Закрыть</span> </button>
+           
           </section>
   </body>
 </html>
