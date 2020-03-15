@@ -1,5 +1,5 @@
 body {
-  width: 1440px;
+  /* width: 1440px; */
   margin: 0;
   padding: 0;
   font-family: "Roboto", Arial, regular;
@@ -23,9 +23,11 @@ img {
 }
 
 .nav-header{
-  width: 1440px;
+  /*width: 1440px; */
   height: 545px;
   background-color: #eeeeee;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .nav-header-catalog{
   width: 1440px;
@@ -34,8 +36,7 @@ img {
 }
 .main-navigation{
   width: 1160px;
-  margin-left: 140px;
-  margin-right: 140px;
+ margin: 0 auto;
   display: flex;
   vertical-align: top;
 }
@@ -59,7 +60,16 @@ img {
 }
  .img-basket-link{
   display: flex;
- 
+  position: relative;
+}
+.img-basket-link::before{
+  content: "";
+position: absolute;
+background: url("../img/svg/basket-icon.svg") no-repeat;
+width: 15px;
+height: 15px;
+left: -26px;
+top: 82px;
 }
 .site-navigation-link{
    font-family: "Roboto", sans-serif;
@@ -222,10 +232,11 @@ img {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 140px;
-  margin-left: 80px;
+   /* margin-top: 140px;
+   margin-left: 80px;
   margin-right: 200px;
-  padding-right: 100px;
+  padding-right: 100px; */
+  margin: 0 auto;
     position: relative;
   }
 
@@ -705,15 +716,23 @@ padding-bottom: 33px;
     text-transform: uppercase;
     
   }
+.main-footer-container{
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
 
+}
   .main-footer {
-    display: flex;
+    /*display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: flex-start; */
       color: #000000;
-      width: 1440px;
-      height: 217px;
+      min-height: 217px;
       background-color: #ffffff;
+     padding-right: 20px;
+      padding-left: 20px; 
     }
 
   .footer-social ul{
@@ -795,8 +814,7 @@ padding-bottom: 33px;
   /* display: none; */
 }
  .modal-close{
-padding-top: 79px;
-   padding-right: 90px;
+
   width: 21px;
   height: 21px;
   cursor: pointer;
@@ -809,10 +827,10 @@ padding-top: 79px;
   content: "";
   position: absolute;
   top: 10px;
-  left: 2px;
+  right: 90px;
   width: 19px;
   height: 3px;
-  background-color:#fb565a;
+  /* background-color:#fb565a; */
   opacity: 0.3;
 }
 .modal-close::before{
