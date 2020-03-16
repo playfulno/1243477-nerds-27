@@ -22,7 +22,7 @@
         <li class="site-navigation"> <a class="site-navigation-link" href="#">Контакты</a></li>
         <!--<li class="site-navigation"> <a class="site-navigation-link img-basket-link" href="#"> <img src="img/svg/basket-icon.svg">Корзина</a> </li> -->
         </ul>
-        <div><a class="site-navigation-link img-basket-link" href="#"> <!--<img src="img/svg/basket-icon.svg"> --> Корзина</a> </div>
+        <div class="icon-basket"><a class="site-navigation-link img-basket-link" href="#"> <!--<img src="img/svg/basket-icon.svg"> --> Корзина</a> </div>
       </div>
         
         </nav>
@@ -42,7 +42,7 @@
             <li class="slider-item slide" id="slide1">
                 <h3 class="slide-title">Долго, дорого, скрупулезно</h3>
                 <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-                <a class="button slide-button" href="#">Узнать больше</a>
+                <a class="button slide-button" href="#">Узнать больше </a>
             </li>
     
             <li class="slider-item slide" id="slide2">
@@ -89,7 +89,7 @@
         </section>
 
       <section class="info-section"> <!--info-section-->
-        <div>
+        <div class="info-container">
         <h2 class="info-section-title"> Мы — маленькая, но гордая <br> дизайн-студия из Краснодара. </h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.</p>
@@ -121,10 +121,22 @@
         </ul>
       </section>
 
+    <section>
+<img  class="map" src="img/map.jpg" width="100%" alt="Адрес дизайн-студии Нёрдс Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 телефон для связи +7 (812) 275-75-75">
 
-      <section>
-<!-- Тут будет карта! -->
-</section>
+<div class="modal-on-map">
+  <h3>NЁRDS DESIGN STUDIO</h3>
+  <ul class="ul-on-map">
+    <li class="item-on-map">191186, Санкт-Петербург, 
+      ул. Б. Конюшенная, д. 19/8</li>
+      <li class="item-on-map">тел. +7 (812) 275-75-75</li>
+  </ul>
+  <button class="write-button" type="button">напишите нам</button>
+</div>
+
+</section> 
+
+
 
       </main>
       
@@ -147,7 +159,8 @@
       <section class="modal modal-post">
         <button class="modal-close" type="button"> <span class="visually-hidden">Закрыть</span> </button>
         <h1>Напишите нам</h1>
-        <form class="login-form" action="index.html" method="post">
+        <form class="modal-form" action="index.html" method="post">
+          <div class="two-field">
             <p> 
               <label class="modal-label" for="appointment-name">Ваше имя:
               </label>
@@ -155,15 +168,20 @@
                   </p>
                   <p>
                   <label class="modal-label" for="appointment-email">Ваш e-mail:</label>
-                        <input id="appointment-email" value="" placeholder="email@example.com">
+                        <input id="appointment-email" name="email" type="email" value="" placeholder="email@example.com">
                   </p>
+                </div>
+                <div class="third-field">
                   <p>
                        <label class="modal-label" for="appointment-text">Текст письма:</label>
-                        <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+                        <input id="appointment-text" type="write-text" name="text" value="" placeholder="В свободной форме">
                   </p>
+                </div>
                   <button class="send-button" type="submit">Отправить</button>
                   </form>
            
           </section>
+
+          <script src="js/popup.js"></script>
   </body>
 </html>
