@@ -625,7 +625,7 @@ opacity: 0.6;
   top: 0;
   bottom: 0;
 }
-.filter-list span.radio:hover{
+/*.filter-list span.radio:hover{
   cursor: pointer;
 }
 .filter-list span.radio::before{
@@ -646,25 +646,48 @@ opacity: 0.6;
   top: 0;
   bottom: 0;
   margin: 0;
-}
-
+} */
 
 .filter-list input[type="radio"],
 .filter-list input[type="checkbox"]{
   display: none;
 }
+.filter-list input[type="radio"] + label span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  background: url("../img/svg/radio-off.svg");
+  cursor: pointer;
+}
+.filter-list input[type="radio"]:checked + label span{
+  background: url("../img/svg/radio-on.svg");
+}
+
+.filter-list input[type="checkbox"] + label span {
+  display: block;
+  width: 25px;
+  height: 25px;
+  margin: 0;
+  background: url("../img/svg/checkbox-off.svg");
+  cursor: pointer;
+}
+.filter-list input[type="checkbox"]:checked + label span{
+  background: url("../img/svg/checkbox-on.svg");
+}
+
 .input-list {
   list-style: none;
   padding: 0px;
   margin: 0px;
 
 }
-.input-text + label::before{
+/*.input-text + label::before{  удалить
   content: "";
   position: absolute;
   left: -10px;
 }
-/*.radio::before{
+.radio::before{
   content: "";
   display: block;
   width: 100%;
