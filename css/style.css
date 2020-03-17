@@ -63,6 +63,7 @@ img {
   display: block;
   box-sizing: border-box;
  margin-right: 140px;
+ margin-left: 80px;
 }
  .img-basket-link{
   display: flex;
@@ -681,6 +682,7 @@ opacity: 0.6;
   padding: 0px;
   margin: 0px;
 
+
 }
 /*.input-text + label::before{  удалить
   content: "";
@@ -729,6 +731,7 @@ opacity: 0.6;
     flex-wrap: wrap;
     align-items: stretch;
     vertical-align: top;
+    width: 820px;
   }
 
  
@@ -870,12 +873,30 @@ opacity: 0.6;
 
 .map{
   position: relative;
+  min-width: 1160px;
+padding-left: 20px;
+padding-right: 20px;
+height: 416px;
+display: flex;
+flex-direction: column;
+align-items: center;
+background: url(../img/map.jpg) no-repeat 50% 0;
+}
+.map-container{
+  width:1160px;
+  margin: 0 auto;
+  position: relative;
+}
+.visible-hidden{
+  display: none;
 }
 .modal-on-map{
   width: 319px;
   height: 308px;
-background-color: rgb(205, 215, 218);
+background-color: #ffffff;
 margin-top: 50px;
+margin-left: -580px;
+position: absolute;
 
 }
 .modal-on-map h3{
@@ -1001,7 +1022,7 @@ margin-top: 50px;
   padding-right: 100px;
   padding-bottom: 84px;
   margin-left: 240px;
-  /* display: none; */
+   display: none; 
 }
  .modal-close{
   width: 21px;

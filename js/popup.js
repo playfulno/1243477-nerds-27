@@ -1,8 +1,8 @@
-var link = document.querySelector("write-button");
+var link = document.querySelector(".write-button");
 var popup = document.querySelector(".modal-post");
 var close = popup.querySelector(".modal-close");
 
-var form = popup.querySelector("form");
+var form = popup.querySelector(".form");
 var name = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 
