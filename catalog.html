@@ -52,59 +52,78 @@
 
     <h3 class="sort-title">Сетка:</h3>
   <ul class="input-list">
+  <li class="filter-list">
+  <label class="check option">
+    <input class="input-text" type="radio">
+    <span class="radio-box"></span>
+    Адаптивная
+  </label>  
+  </li>
 
-  <li class="filter-list"> <input class="input-text" type="radio" name="grid" value="adaptive-grid"> 
-    <label for="filter-adaptive"> <span>Адаптивная</span> </label> </li>
+  <li class="filter-list">
+    <label class="check option">
+      <input class="input-text" type="radio">
+      <span class="radio-box"></span>
+      Фиксированная
+    </label>  
+    </li>
 
-  <li class="filter-list"> <input class="input-text" type="radio" name="grid" value="fixed-grid"> 
-    <label for="filter-fixed"> <span>Фиксированная</span> </label> </li>
+    <li class="filter-list">
+      <label class="check option">
+        <input class="input-text" type="radio">
+        <span class="radio-box"></span>
+        Резиновая
+      </label>  
+      </li>
+    </ul>
 
-  <li class="filter-list"> <input class="input-text" type="radio" name="grid" value="rubber-grid"> 
-    <label for="filter-rubber"> <span>Резиновая</span> </label> </li> 
-  </ul>
+  
   
   <h3 class="sort-title">Особенности:</h3>
   <ul class="input-list">
     <li class="filter-list">
-    <input class="input-text" type="checkbox" name="slider" id="filter-slider">
-      <label for="filter-slider"><span>Слайдер</span></label>
-      </li>
-      <li class="filter-list">
-        <input class="input-text" type="checkbox" name="advantages" id="filter-advantages">
-          <label for="filter-advantages"><span>Блок преимуществ</span></label>
+<label class="check option">
+  <input class="input-text" type="checkbox">
+  <span class="check-box"></span>
+  Слайдер
+</label>
+    </li>
+
+    <li class="filter-list">
+      <label class="check option">
+        <input class="input-text" type="checkbox">
+        <span class="check-box"></span>
+        Блок преимуществ
+      </label>
           </li>
+
           <li class="filter-list">
-            <input class="input-text" type="checkbox" name="news" id="filter-news">
-              <label for="filter-news"><span>Новости</span></label>
-              </li>
-              <li class="filter-list">
-                <input class="input-text" type="checkbox" name="gallery" id="filter-gallery">
-                  <label for="filter-gallery"><span>Галерея</span></label>
-                  </li>
-                  <li class="filter-list">
-                    <input class="input-text" type="checkbox" name="basket" id="filter-basket">
-                      <label for="filter-basket"><span>Корзина</span></label>
+            <label class="check option">
+              <input class="input-text" type="checkbox">
+              <span class="check-box"></span>
+              Новости
+            </label>
+                </li>
+
+                <li class="filter-list">
+                  <label class="check option">
+                    <input class="input-text" type="checkbox">
+                    <span class="check-box"></span>
+                    Галерея
+                  </label>
                       </li>
+
+                      <li class="filter-list">
+                        <label class="check option">
+                          <input class="input-text" type="checkbox">
+                          <span class="check-box"></span>
+                          Корзина
+                        </label>
+                            </li>
     </ul>
     <button class="show-filter-button" type="button"> Показать </button>
   </section>
   
-
-
-<section>
-
-<!-- ФОРМА 
-<ul>
-<li><span><img src="img/svg/checkbox-on.svg"></span> Слайдер </li>
-<li><span><img src="img/svg/checkbox-off.svg"></span> Блок преимуществ </li>
-<li><span><img src="img/svg/checkbox-on.svg"></span> Новости </li>
-<li><span><img src="img/svg/checkbox-off.svg"></span> Галерея </li>
-<li><span><img src="img/svg/checkbox-off.svg"></span> Корзина </li>
-</ul>
- -->
- </section>
-
-
  <section class="second-main-block">
   <span class="sort-line"> <h3 class="sort-title">Сортировать:</h3> 
     <ul class="ul-sort-line">
@@ -115,6 +134,7 @@
     </span>
   <ul class="catalog-list">
       <li class="catalog-item">
+        <div class="browser"> <img src="img/browser.svg" width="360" height="40"> </div>
         <img src="img/catalog/sedona.jpg" width="360" height="576" alt="Пример для лендинга Sedona">
           <div class="price-block">
             <a class="site-title" href="#"><h3>Sedona</h3></a>
@@ -124,6 +144,7 @@
           </li>
          
           <li class="catalog-item">
+            <div class="browser"> <img src="img/browser.svg" width="360" height="40"> </div>
           <img src="img/catalog/pink.jpg" width="360" height="576" alt="Пример для лендинга OOpink">
           <div class="price-block">
           <a class="site-title" href="#"><h3>Pink App</h3></a>
@@ -133,6 +154,7 @@
           </li>
   
           <li class="catalog-item">
+            <div class="browser"> <img src="img/browser.svg" width="360" height="40"> </div>
               <img src="img/catalog/barbershop.jpg" width="360" height="576" alt="Пример для лендинга барбершопа «Бородинский»">
               <div class="price-block">
               <a class="site-title" href="#"><h3>Barbershop</h3></a>
@@ -142,6 +164,7 @@
               </li>
   
               <li class="catalog-item">
+                <div class="browser"> <img src="img/browser.svg" width="360" height="40"> </div>
                   <img src="img/catalog/mishka.jpg" width="360" height="576" alt="Пример для лендинга сайта вязаных игрушек Mishka">
                  <div class="price-block">
                   <a class="site-title" href="#"><h3>MISHKA</h3></a>
@@ -151,6 +174,7 @@
                   </li>
   
                   <li class="catalog-item">
+                    <div class="browser"> <img src="img/browser.svg" width="360" height="40"> </div>
                       <img src="img/catalog/aplus.jpg" width="360" height="576" alt="Пример для лендинга сайта A Plus">
                       <div class="price-block">
                       <a class="site-title" href="#"><h3>A Plus</h3></a>
@@ -160,6 +184,7 @@
                       </li>
   
                       <li class="catalog-item">
+                        <div class="browser"> <img src="img/browser.svg" width="360" height="40"> </div>
                           <img src="img/catalog/kvast.jpg" width="360" height="576" alt="Пример промо-сайт производителя крафтового кваса">
                           <div class="price-block">
                           <a class="site-title" href="#"><h3>КВАСТ</h3></a>
@@ -177,10 +202,24 @@
   <li class="pagination-item"> <a class="pagination-link" href="#">3</a></li>
   <li class="pagination-item item-next"> <a class="pagination-link" href="#">Следующая</a></li>
   </ul>
-  <!-- Тут будет карта! -->
   </section>
 </main>
 
+<section class="map">
+  <h2 class="visible-hidden">Карта</h2>
+<div class="map_container">
+
+<div class="modal-on-map">
+<h3>NЁRDS DESIGN STUDIO</h3>
+<ul class="ul-on-map">
+<li class="item-on-map">191186, Санкт-Петербург, 
+  ул. Б. Конюшенная, д. 19/8</li>
+  <li class="item-on-map">тел. +7 (812) 275-75-75</li>
+</ul>
+<button class="write-button" type="button">напишите нам</button>
+</div>
+</div> 
+</section> 
 
 <footer class="main-footer"> 
   <!-- <a href="#"> <img src="img/map.jpg"> </a> -->
