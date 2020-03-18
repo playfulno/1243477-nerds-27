@@ -352,7 +352,7 @@ justify-content: space-between;
   font-size: 16px;
   color: #283136;
   line-height: 24px; 
-
+position: relative;
   /*   
   content: "";
   position: absolute;
@@ -361,14 +361,14 @@ justify-content: space-between;
   background-color:#fb565a; */
 }
 
-/*.red-dash {
+.red-dash {
+  position: absolute;
   width: 25px;
   height: 2px;
-  position: relative;
   display: flex;
   border: none;
   background-color: #fb565a;
-} */
+} 
 
 .text-percent{
   font-size: 16px;
@@ -676,9 +676,9 @@ opacity: 0.6;
 }
 .check-box{
   position: absolute;
-			margin-left: -1.8em;
-			width: 1.4em;
-      height: 1.4em; 
+			margin-left: -25px;
+			width: 25px;
+      height: 23px; 
       background-image: url("../img/svg/checkbox-off-ok.svg");
       border: none;
       opacity: 0.4;
@@ -707,9 +707,9 @@ opacity: 0.6;
 /* radio check*/
 .radio-box{
     position: absolute;
-        margin-left: -1.8em;
-        width: 1.4em;
-        height: 1.4em;
+    margin-left: -25px;
+    width: 25px;
+    height: 25px; 
         background-image: url("../img/svg/radio-off.svg");
         border: none;
         opacity: 0.4;
@@ -846,9 +846,10 @@ opacity: 0.6;
 .browser{
   display: block;
   margin-bottom: -9px;
+  opacity: 0.12;
 }
 .catalog-item:hover .browser{
-  opacity: 0.12;
+  background-image: url("../img.browser.svg");
 }
 .catalog-item:hover .price-block{
   position: absolute;
