@@ -41,7 +41,7 @@
         <ul class="slider-list">
             <li class="slider-item slide" id="slide1">
                 <h3 class="slide-title">Долго, дорого, скрупулезно</h3>
-                <p class="slide-description">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <p class="slide-description">Математически выверенный дизайн&nbsp; для вашего сайта или мобильного приложения.</p>
                 <a class="button slide-button" href="#">Узнать больше </a>
             </li>
     
@@ -65,7 +65,8 @@
 
  
       
-        <section>
+        <section  class="advantages-container">
+          <h2 class="visually-hidden">Секция преимуществ</h2>
           <ul class="advantage-picture-list">
           <li>
         <img src="img/advantage-picture-red.png" alt="графика веб-сайтов">
@@ -89,19 +90,20 @@
         </section>
 
       <section class="info-section"> <!--info-section-->
+    
         <div class="info-container">
         <h2 class="info-section-title"> Мы — маленькая, но гордая <br> дизайн-студия из Краснодара. </h2>
         <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет
           превыше креатива. Работаем не покладая рук, как роботы.</p>
           <p class="info-section-subtitle">Выполняем заказы на разработку:</p>
           <ul class="first-info-list"> 
-            <li class="info-list red-dash"> Веб-сайтов любой сложности</li>
-            <li class="info-list  red-dash">Мобильных приложений для iOS и Android</li>
-            <li class="info-list  red-dash">Слайдшоу и видео для корпоративных презентаций</li>
+            <li class="info-list"> Веб-сайтов любой сложности</li>
+            <li class="info-list">Мобильных приложений для iOS и Android</li>
+            <li class="info-list">Слайдшоу и видео для корпоративных презентаций</li>
           </ul>
         </div>
-        <div>
-          <img src="img/nerds-picture.png" width="360" height="208" alt="Логотип дизайн-студии «Nёrds»">
+        <div class="info-logo-section">
+          <img class="info-nerds-logo" src="img/nerds-picture.png" width="360" height="208" alt="Логотип дизайн-студии «Nёrds»">
           <p class="info-section-subtitle">с 2004 года Любим точность во всем:</p>
           <ul class="ul-info-list">
           <li> <h3 class="info-percent">146%</h3> <p class="text-percent">Уровень самоотдачи</p> </li>
@@ -114,10 +116,10 @@
       
       <section class="logo-list-section">
         <ul class="logo-list">
-          <li> <a class="logo-list-button"> <img src="img/htmlacdemy-logo.png" width="199" height="68" alt="Логотип HTML-Academy"> </a> </li>
-          <li> <a class="logo-list-button"> <img src="img/borodinsli-logo.png" width="209" height="90" alt="Логотип барбершопа Borodinski"> </a> </li>
-          <li> <a class="logo-list-button"> <img src="img/pink-logo.png" width="185" height="52" alt="Логотип приложения для iOS и Android Pink"> </a> </li>
-          <li> <a class="logo-list-button"> <img src="img/mishka-logo.png" width="173" height="84" alt="Логотип интернет-магазина вязаных игрушек Mishka"> </a> </li>
+          <li class="logo-list-item logo-list-item-html"> <a class="logo-list-button"> <img src="img/htmlacdemy-logo.png" width="199" height="68" alt="Логотип HTML-Academy"> </a> </li>
+          <li class="logo-list-item logo-list-item-borodinsky"> <a class="logo-list-button"> <img src="img/borodinsli-logo.png" width="209" height="90" alt="Логотип барбершопа Borodinski"> </a> </li>
+          <li class="logo-list-item logo-list-item-pink"> <a class="logo-list-button"> <img src="img/pink-logo.png" width="185" height="52" alt="Логотип приложения для iOS и Android Pink"> </a> </li>
+          <li  class="logo-list-item logo-list-item-mishka"> <a class="logo-list-button"> <img src="img/mishka-logo.png" width="173" height="84" alt="Логотип интернет-магазина вязаных игрушек Mishka"> </a> </li>
         </ul>
       </section>
 
@@ -162,7 +164,7 @@
         <h1>Напишите нам</h1>
         <form class="modal-form" action="index.html" method="post">
           <div class="two-field">
-            <p> 
+            <p class="input-place">
               <label class="modal-label" for="appointment-name">Ваше имя:
               </label>
                         <input id="appointment-name" type="text" name="name" value="" placeholder="Имя Фамилия">
@@ -180,6 +182,7 @@
                 </div>
                   <button class="send-button" type="submit">Отправить</button>
                   </form>
+
            
           </section>
 

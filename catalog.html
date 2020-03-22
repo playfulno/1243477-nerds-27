@@ -28,7 +28,7 @@
 </header>
 
 <main class="main-wrapper">
-  
+ 
   <div class="catalog-columns">
 <section class="main-first-block">
   <form method="get" action="https://echo.htmlacademy.ru">
@@ -49,12 +49,12 @@
       </div>
     </fieldset>
   </form>
-
+<div class="grid">
     <h3 class="sort-title">Сетка:</h3>
   <ul class="input-list">
   <li class="filter-list">
     <label class="check option" for="adaptive">
-      <input class="input-text" type="radio" name="adaptive" value="adaptive" id="adaptive">
+      <input class="input-text" type="radio" name="grid" value="adaptive" id="adaptive">
       <span class="radio-box"></span>
       Адаптивная
     </label>
@@ -62,7 +62,7 @@
 
   <li class="filter-list">
     <label class="check option" for="fix">
-      <input class="input-text" type="radio" name="fix" value="fix" id="fix">
+      <input class="input-text" type="radio" name="grid" value="fix" id="fix">
       <span class="radio-box"></span>
       Фиксированная
     </label>
@@ -70,41 +70,17 @@
 
   <li class="filter-list">
     <label class="check option" for="rubber">
-      <input class="input-text" type="radio" name="rubber" value="rubber" id="rubber">
+      <input class="input-text" type="radio" name="grid" value="rubber" id="rubber">
       <span class="radio-box"></span>
       Резиновая
     </label>
   </li>
+</ul>
 
 
-  <!-- <label class="check option">
-    <input class="input-text" type="radio" name="adaptive" value="adaptive">
-    <span class="radio-box"></span>
-    Адаптивная
-  </label>  
-  </li>
-
-  <li class="filter-list">
-    <label class="check option">
-      <input class="input-text" type="radio" name="fix" value="fix">
-      <span class="radio-box"></span>
-      Фиксированная
-    </label>  
-    </li>
-
-    <li class="filter-list">
-      <label class="check option">
-        <input class="input-text" type="radio" name="rubber" value="rubber">
-        <span class="radio-box"></span>
-        Резиновая
-      </label>  
-      </li>
-    </ul>  -->
-
-  
-  
-  <h3 class="sort-title">Особенности:</h3>
-  <ul class="input-list">
+  <div class="checkgrid">
+  <h3 class="sort-title-features">Особенности:</h3>
+  <ul class="input-list-check">
     <li class="filter-list">
 <label class="check option">
   <input class="input-text" type="checkbox">
@@ -145,9 +121,11 @@
                         </label>
                             </li>
     </ul>
+  </div>
+  </div>
     <button class="show-filter-button" type="button"> Показать </button>
   </section>
-  
+
  <section class="second-main-block">
   <span class="sort-line"> <h3 class="sort-title">Сортировать:</h3> 
     <ul class="ul-sort-line">
@@ -242,6 +220,7 @@
 </ul>
 <button class="write-button" type="button">напишите нам</button>
 </div>
+<div class="cart-icon"></div>
 </div> 
 </section> 
 

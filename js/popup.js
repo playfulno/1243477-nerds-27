@@ -2,7 +2,7 @@ var button = document.querySelector(".write-button");
 var popup = document.querySelector(".modal-post");
 var close = popup.querySelector(".modal-close");
 
-var form = popup.querySelector(".form");
+var form = popup.querySelector(".modal-form");
 var name = popup.querySelector("[name=name]");
 var email = popup.querySelector("[name=email]");
 
@@ -15,37 +15,39 @@ try {
   isStorageSupport = false;
 }
 
-link.addEventListener("click", function(evt){
+button.addEventListener("click", function(evt){
+  console.log('here');
     evt.preventDefault();
-    popup.classList.add(".modal-show");
+    popup.classList.add("modal-show");
 
     if (storage) {
-      login.value = storage;
+      name.value = storage;
+
     }
-    name.focus();
+    form.addEventListener("submit", function (evt) {
+        if (!email.value || !name.value) {
+          evt.preventDefault();
+          console.log("Нужно ввести имя и э-мэйл");
+        } else {
+            localStorage.setItem("email", email.value);
+          }
+    });
 
 });
 close.addEventListener("click", function (evt) {
     evt.preventDefault();
-    popup.classList.remove(".modal-show");
-});
-
-form.addEventListener("submit", function (evt) {
-    if (!email.value || !name.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести имя и э-мэйл");
-    } else {
-        localStorage.setItem("email", email.value);
-      }
+    popup.classList.remove("modal-show");
 });
 
 
 
-/* window.addEventListener("keydown", function (evt) {
+
+
+ window.addEventListener("keydown", function (evt) {
     if (evt.keyCode === 27) {
       evt.preventDefault();
-      if (popup.classList.contains(".modal-show")) {
-        popup.classList.remove(".modal-show");
+      if (popup.classList.contains("modal-show")) {
+        popup.classList.remove("modal-show");
       }
     }
-  }); */
+  });
