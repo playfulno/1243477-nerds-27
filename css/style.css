@@ -434,7 +434,7 @@ padding-right: 45px;
 .studio-description__count-sup {
   position: absolute;
   top: 1420px;
-  left: 165px;
+  left: 15px;
   transform: scale(0.75);
   margin-left: 960px;
 }
@@ -1314,7 +1314,7 @@ margin-top: -15px;
   padding-bottom: 10px;
 }
 
-.modal-post h1{
+.modal-post h2{
   font-size: 45px;
   line-height: 45px;
   margin-top: -8px;
