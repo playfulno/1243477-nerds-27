@@ -335,7 +335,7 @@ padding-right: 20px;
 background: transparent;
 margin: 0 auto;
 border-bottom: 2px solid #eeeeee;
-padding-bottom: 50px;
+padding-bottom: 53px;
 }
 .info-container{
   width: 740px;
@@ -424,10 +424,21 @@ color: #000000;
 margin: 0;
 }
 
-.percent{
+/*.percent{
   font-weight: bold;
     font-size: 24px;
     margin-left: 85px;
+} */
+
+.studio-description__count-sup {
+  position: absolute;
+  top: 18px;
+  left: 75px;
+  transform: scale(0.75);
+}
+
+.studio-description__count-sup3 {
+  left: 45px;
 }
 
 .ul-info-list li:last-child{
@@ -449,7 +460,7 @@ margin: 0;
   flex-direction: row;
   padding: 0;
   padding-top: 65px;
-  padding-bottom: 38px;
+  padding-bottom: 30px;
   width: 1160px;
   margin: 0 auto;
   margin: 0 auto;
@@ -1164,8 +1175,10 @@ position: absolute;
   padding-left: 101px;
   padding-right: 100px;
   padding-bottom: 84px;
-  margin-left: 240px;
+  margin-left: 235px;
    display: none; 
+   top: -805px;
+   background-color: white;
 }
 
 .modal-show {
@@ -1203,6 +1216,9 @@ position: absolute;
   transform: rotate(-45deg);
 } 
 
+.modal-form{
+margin-top: -15px;
+}
 
 .modal-form input[type="text"],
 .modal-form input[type="email"],
@@ -1261,10 +1277,10 @@ position: absolute;
 }
 
 .two-field{
-  display: block;
+  display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-  margin-right: 40px;
+  justify-content: space-between;
+  padding-right: 10px;
 }
 .third-field{
   display: flex;
@@ -1293,12 +1309,13 @@ position: absolute;
   font-weight: bold;
   color: #000000;
   display: block;
+  padding-bottom: 10px;
 }
 
 .modal-post h1{
   font-size: 45px;
   line-height: 45px;
-  margin-top: -10px;
+  margin-top: -8px;
 
 }
 
@@ -1315,4 +1332,5 @@ position: absolute;
   text-decoration: none;
   text-align: center;
   border: none;
+  margin-top: 30px;
 }
