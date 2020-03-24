@@ -422,6 +422,7 @@ height: 208px;
   font-weight: bold;
 color: #000000;
 margin: 0;
+padding-right: 45px;
 }
 
 /*.percent{
@@ -432,13 +433,14 @@ margin: 0;
 
 .studio-description__count-sup {
   position: absolute;
-  top: 18px;
-  left: 75px;
+  top: 1420px;
+  left: 165px;
   transform: scale(0.75);
+  margin-left: 960px;
 }
 
 .studio-description__count-sup3 {
-  left: 45px;
+  left: 45px; 
 }
 
 .ul-info-list li:last-child{
