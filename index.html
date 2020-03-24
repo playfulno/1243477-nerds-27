@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Nёrds»</title>
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -11,8 +11,8 @@
 
     <header class="nav-header">
         <nav class="main-navigation">
-        <a>
-          <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»">
+          <a class="navigation-logo-link">
+            <img src="img/svg/nerds-logo.svg" width="160" height="65" alt="Логотип дизайн-студии «Nёrds»">
         </a>
         <div class="main-navigation-wrapper">
        <ul class="ul-list">
@@ -41,7 +41,7 @@
         <ul class="slider-list">
             <li class="slider-item slide" id="slide1">
                 <h3 class="slide-title">Долго, дорого, скрупулезно</h3>
-                <p class="slide-description">Математически выверенный дизайн для&nbsp;вашего сайта или мобильного приложения.</p>
+                <p class="slide-description">Математически выверенный дизайн для&nbsp;вашего&nbsp;сайта или мобильного приложения.</p>
                 <a class="button slide-button" href="#">Узнать больше </a>
             </li>
     
@@ -105,12 +105,12 @@
           <img class="info-nerds-logo" src="img/nerds-picture.png" width="360" height="208" alt="Логотип дизайн-студии «Nёrds»">
           <p class="info-section-second-subtitle">с 2004 года Любим точность во всем:</p>
           <ul class="ul-info-list">
-          <li> <!--<span class="percent">%</span> --> <h3 class="info-percent">146 <sup class="studio-description__count-sup">&#37;</sup> </h3> 
-            <p class="text-percent">Уровень самоотдачи</p> </li>
-          <li> <!--<span class="percent">%</span> --> <h3 class="info-percent">100 <sup class="studio-description__count-sup">&#37;</sup> </h3>
-            <p class="text-percent">Соблюдение сроков</p> </li>
-          <li> <!--<span class="percent">%</span> --> <h3 class="info-percent">50 <sup class="studio-description__count-sup studio-description__count-sup3">&#37;</sup> </h3>
-            <p class="text-percent">Минимальная предоплата</p> </li>
+            <li> <!--<span class="percent">%</span> --> <h3 class="info-percent">146<sup class="info-percent-sign">&#37;</sup></h3>
+              <p class="text-percent">Уровень самоотдачи</p> </li>
+            <li> <!--<span class="percent">%</span> --> <h3 class="info-percent">100<sup class="info-percent-sign">&#37;</sup></h3>
+              <p class="text-percent">Соблюдение сроков</p> </li>
+            <li> <!--<span class="percent">%</span> --> <h3 class="info-percent">50<sup class="info-percent-sign info-percent-sign-last">&#37;</sup></h3>
+              <p class="text-percent">Минимальная предоплата</p> </li>
           </ul>
         </div>
       <!-- Форма для основной секции и карты -->
@@ -128,14 +128,16 @@
 
     <section class="map">
       <h2 class="visible-hidden">Карта</h2>
+     <!-- <span class="map-marker"> <img src="img/map-marker.png" width="200" height="190" alt="флажок на карте>" </span> -->
+
 <div class="map_container">
 
 <div class="modal-on-map">
   <h3>NЁRDS DESIGN STUDIO</h3>
-  <ul class="ul-on-map">
+  <ul class="ul-on-map"> 
     <li class="item-on-map">191186, Санкт-Петербург, 
-      ул. Б. Конюшенная, д. 19/8</li>
-      <li class="item-on-map">тел.<a href="tel:+78122757575"> </a></li>
+      ул. Б. Конюшенная,&nbsp;д. 19/8</li>
+      <li class="item-on-map">тел.<a href="tel:+78122757575">+7(812)275-75-75 </a></li>
   </ul>
   <button class="write-button" type="button">напишите нам</button>
 </div>
@@ -177,8 +179,8 @@
                 <div class="third-field">
                   <p  class="input-place">
                        <label class="modal-label" for="appointment-text">Текст письма:</label>
-                        <input id="appointment-text" type="write-text" name="text" value="" placeholder="В свободной форме">
-                  </p>
+                       <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+                      </p>
                 </div>
                   <button class="send-button" type="submit">Отправить</button>
                   </form>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Дизайн-студия «Nёrds»</title>
-    <link rel="stylesheet" href="https://fonts.google.com/specimen/Roboto">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap&subset=cyrillic,cyrillic-ext,latin-ext" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
@@ -15,7 +15,7 @@
 </a>
 <div class="main-navigation-wrapper">
 <ul class="ul-list">
-  <li class="site-navigation"> <a class="site-navigation-link" href="#">Студия</a> 
+  <li class="site-navigation"> <a class="site-navigation-link" href="#">Студия</a>
   </li>
   <li class="site-navigation"> <a class="site-navigation-link" href="#">Клиенты</a> </li>
   <li class="site-navigation"> <a class="site-navigation-link" href="catalog.html">Магазин</a> </li>
@@ -37,7 +37,7 @@
       <div class="range-filter">
         <div class="range-controls">
           <div class="scale">
-            <div class="bar" style="margin-left: 20%; width: 30%"></div>
+            <div class="bar"></div>
           </div>
           <div class="toggle toggle-min"></div>
           <div class="toggle toggle-max"></div>
@@ -129,9 +129,11 @@
  <section class="second-main-block">
   <div class="sort-line"> <h3 class="sort-title">Сортировать:</h3> 
     <ul class="ul-sort-line">
-      <li class="sort-li"> <a class="sort-link">По цене</a> </li>
+      <li class="sort-li"> <a class="sort-link sort-link-active">По цене</a> </li>
       <li class="sort-li"> <a class="sort-link">По типу</a> </li>
       <li class="sort-li"> <a class="sort-link">По названию</a> </li>
+      <li> <a class="sort-button up-click"></a> </li>
+      <li> <a class="sort-button down-click"></a> </li>
     </ul>
   </div>
   <ul class="catalog-list">
@@ -216,8 +218,8 @@
 <h3>NЁRDS DESIGN STUDIO</h3>
 <ul class="ul-on-map">
 <li class="item-on-map">191186, Санкт-Петербург, 
-  ул. Б. Конюшенная, д. 19/8</li>
-  <li class="item-on-map">тел. +7 (812) 275-75-75</li>
+  ул. Б. Конюшенная,&nbsp;д.19/8</li>
+  <li class="item-on-map">тел.<a href="tel:+78122757575">+7(812)275-75-75 </a></li>
 </ul>
 <button class="write-button" type="button">напишите нам</button>
 </div>
@@ -260,8 +262,8 @@
           <div class="third-field">
             <p  class="input-place">
                  <label class="modal-label" for="appointment-text">Текст письма:</label>
-                  <input id="appointment-text" type="write-text" name="text" value="" placeholder="В свободной форме">
-            </p>
+                 <input id="appointment-text" type="text" name="text" value="" placeholder="В свободной форме">
+                </p>
           </div>
             <button class="send-button" type="submit">Отправить</button>
             </form>
