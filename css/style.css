@@ -234,13 +234,13 @@ letter-spacing: normal;
 #product-2:checked ~ .site-wrapper {
   background-color: #eeeeee;
   background-image: url("../img/slide-picture2.png");
-  background-position: 445px 20px;
+  background-position: 520px 0px;
 }
 
 #product-3:checked ~ .site-wrapper {
   background-color: #eeeeee;
   background-image: url("../img/slide-picture3.png");
-  background-position: 545px -60px; 
+  background-position: 420px 10px; 
 }
 
 .advantages-container {
@@ -446,12 +446,6 @@ padding-right: 42px;
 position: relative;
 }
 
-/*.percent{
-  font-weight: bold;
-    font-size: 24px;
-    margin-left: 85px;
-} */
-
 .info-percent-sign {
   position: absolute;
   right: 15px;
@@ -610,8 +604,8 @@ fieldset ul {
 }
 
 .sort-button{
-  top: 5px;
-  left: 5px;
+  top: 7px;
+  left: 15px;
 }
 
 .ul-sort-line{
@@ -1090,7 +1084,6 @@ padding-top: 12px;
     justify-content: center; 
   }
 
- 
   .item-next{
     width: 260px;
   height: 50px;
@@ -1101,7 +1094,6 @@ padding-top: 12px;
     margin-right: 0;
   }
   
-
 .main-footer-container{
   width: 1160px;
   margin: 0 auto;
@@ -1123,10 +1115,6 @@ align-items: center;
 background: url(../img/map.jpg) no-repeat 50% 0;
 margin-top: 20px;
 }
-
-/* .map-marker{
-  position: absolute;
-} */
 
 .map-container{
   width:1160px;
@@ -1293,7 +1281,6 @@ padding-right: 50px;
   height: 21px;
   cursor: pointer;
   position: absolute; 
-  /* background: transparent; */
   border: none;
   top: 78px;
   right: 90px;
