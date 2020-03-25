@@ -50,6 +50,7 @@ img {
   margin-top: 49px;
 }
 .main-navigation-wrapper {
+  background-color: #eeeeee;
   display: flex;
   flex-direction: row;
   margin-left: 200px;
@@ -350,6 +351,7 @@ background: transparent;
 margin: 0 auto;
 border-bottom: 2px solid #eeeeee;
 padding-bottom: 53px;
+box-sizing: border-box;
 }
 .info-container{
   width: 740px;
