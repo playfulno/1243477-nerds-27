@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: "Roboto", Arial, regular;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   font-weight: normal;
@@ -159,7 +159,7 @@ letter-spacing: normal;
   font-size: 16px;
 }
 .button{
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
   text-transform: uppercase;
@@ -249,7 +249,7 @@ letter-spacing: normal;
 }
 
 .advantage-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 24px;
   font-weight: bold;
   text-align: left;
@@ -258,7 +258,7 @@ letter-spacing: normal;
   margin-bottom: 0px;
 }
 .advantage-text{
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   text-align: left;
@@ -289,7 +289,7 @@ letter-spacing: normal;
   }
 
 .advantage-button {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   text-decoration: none;
   font-size: 16px;
   width: 160px;
@@ -750,6 +750,7 @@ opacity: 0.6;
 
 .price-controls label {
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -759,7 +760,7 @@ opacity: 0.6;
   width: 60px;
   padding: 8px 10px;
   margin-left: 10px;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   text-align: center;
   color: #283136;
@@ -779,7 +780,7 @@ padding-top: 4px;
   padding-top: 10px;
 }
 .sort-title {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -793,7 +794,7 @@ padding-top: 4px;
 }
 
 .sort-title-features {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
   font-stretch: normal;
@@ -806,7 +807,7 @@ padding-top: 4px;
 }
 
 .filter-list {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #283136;
   line-height: 20px;
@@ -922,7 +923,7 @@ padding-top: 12px;
 }
 
 .show-filter-button{
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
   font-weight: 500;
   text-transform: uppercase;
@@ -994,8 +995,8 @@ padding-top: 12px;
 }
 
   .site-title{
-    font-family: "Roboto", sans-serif;
-      font-size: 18px;
+    font-family: "Roboto", Arial, sans-serif;
+    font-size: 18px;
     font-weight: bold;
     color: #000000;
     text-transform: uppercase; 
@@ -1008,7 +1009,7 @@ padding-top: 12px;
     color: rgba(0, 0, 0, 0.3);
   }
   .site-description{
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     line-height: 1.13;
     text-align: center; 
@@ -1020,7 +1021,7 @@ padding-top: 12px;
     margin: 0 auto;
   }
   .price-button{
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 16px;
     color: #ffffff;
     text-transform: uppercase;
@@ -1266,7 +1267,8 @@ padding-right: 50px;
   padding-left: 101px;
   padding-right: 100px;
   padding-bottom: 84px;
-  margin-left: 235px;
+  /*margin-left: 235px;*/
+  margin: auto;
    display: none; 
    top: -805px;
    background-color: white;
@@ -1274,6 +1276,7 @@ padding-right: 50px;
 
 .modal-show {
   display: block;
+  position: fixed;
 }
 
  .modal-close{
@@ -1411,7 +1414,7 @@ margin-top: -15px;
 
 
 .send-button{
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   color: #ffffff;
   text-transform: uppercase;
