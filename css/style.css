@@ -351,7 +351,7 @@ background: transparent;
 margin: 0 auto;
 border-bottom: 2px solid #eeeeee;
 padding-bottom: 53px;
-box-sizing: border-box;
+
 }
 .info-container{
   width: 740px;
@@ -1101,6 +1101,7 @@ padding-top: 12px;
     margin-right: 11px;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
   }
 
   .item-next{
@@ -1135,6 +1136,7 @@ margin-top: 20px;
 
 .map iframe {
   width: 100%;
+  border: none;
 }
 
 .map-container{
