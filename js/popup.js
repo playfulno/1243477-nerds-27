@@ -16,7 +16,6 @@ try {
 }
 
 button.addEventListener("click", function(evt){
-  console.log('here');
     evt.preventDefault();
     popup.classList.add("modal-show");
 
